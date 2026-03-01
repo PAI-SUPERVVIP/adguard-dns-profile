@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>UDP</string>
+                <key>ServerAddresses</key>
+                <array>
+                    <string>94.140.14.14</string>
+                    <string>94.140.15.15</string>
+                </array>
+            </dict>
+            <key>PayloadDescription</key>
+            <string>Configures DNS settings to block ads</string>
+            <key>PayloadDisplayName</key>
+            <string>AdGuard DNS</string>
+            <key>PayloadIdentifier</string>
+            <string>com.adguard.dns</string>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings</string>
+            <key>PayloadUUID</key>
+            <string>B5C8E3A1-6D4F-4E2B-9C8D-1E3F5A7B9C0D</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>ProhibitDisconnect</key>
+            <true/>
+        </dict>
+    </array>
+    <key>PayloadDisplayName</key>
+    <string>AdGuard DNS - Block Ads</string>
+    <key>PayloadIdentifier</key>
+    <string>com.adguard.dns.profile</string>
+    <key>PayloadRemovalDisallowed</key>
+    <false/>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>A1B2C3D4-E5F6-7890-ABCD-EF1234567890</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+    <key>PayloadDescription</key>
+    <string>This profile blocks ads using AdGuard DNS</string>
+</dict>
+</plist>
