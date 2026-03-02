@@ -8,7 +8,9 @@
             <key>DNSSettings</key>
             <dict>
                 <key>DNSProtocol</key>
-                <string>UDP</string>
+                <string>HTTPS</string>
+                <key>ServerURL</key>
+                <string>https://dns.adguard-dns.com/dns-query</string>
                 <key>ServerAddresses</key>
                 <array>
                     <string>94.140.14.14</string>
@@ -16,11 +18,11 @@
                 </array>
             </dict>
             <key>PayloadDescription</key>
-            <string>Configures DNS settings to block ads</string>
+            <string>Configures DNS over HTTPS to block ads</string>
             <key>PayloadDisplayName</key>
-            <string>AdGuard DNS</string>
-            <key>PayloadIdentifier</string>
-            <string>com.adguard.dns</string>
+            <string>AdGuard DNS (DoH)</string>
+            <key>PayloadIdentifier</key>
+            <string>com.adguard.doh</string>
             <key>PayloadType</key>
             <string>com.apple.dnsSettings</string>
             <key>PayloadUUID</key>
@@ -32,9 +34,9 @@
         </dict>
     </array>
     <key>PayloadDisplayName</key>
-    <string>AdGuard DNS - Block Ads</string>
+    <string>AdGuard DNS - Block Ads (DoH)</string>
     <key>PayloadIdentifier</key>
-    <string>com.adguard.dns.profile</string>
+    <string>com.adguard.doh.profile</string>
     <key>PayloadRemovalDisallowed</key>
     <false/>
     <key>PayloadType</key>
@@ -44,6 +46,6 @@
     <key>PayloadVersion</key>
     <integer>1</integer>
     <key>PayloadDescription</key>
-    <string>This profile blocks ads using AdGuard DNS</string>
+    <string>This profile blocks ads using AdGuard DNS over HTTPS</string>
 </dict>
 </plist>
