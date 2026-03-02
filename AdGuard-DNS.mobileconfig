@@ -5,12 +5,22 @@
     <key>PayloadContent</key>
     <array>
         <dict>
+            <key>IPv4</key>
+            <dict>
+                <key>OverridePrimary</key>
+                <false/>
+            </dict>
+            <key>PPP</key>
+            <dict>
+                <key>AuthenticationMethod</key>
+                <string>None</string>
+            </dict>
             <key>DNSSettings</key>
             <dict>
                 <key>DNSProtocol</key>
-                <string>HTTPS</string>
-                <key>ServerURL</key>
-                <string>https://dns.adguard-dns.com/dns-query</string>
+                <string>TLS</string>
+                <key>ServerName</key>
+                <string>dns.adguard-dns.com</string>
                 <key>ServerAddresses</key>
                 <array>
                     <string>94.140.14.14</string>
@@ -18,25 +28,31 @@
                 </array>
             </dict>
             <key>PayloadDescription</key>
-            <string>Configures DNS over HTTPS to block ads</string>
+            <string>AdGuard DNS with DoT to block ads</string>
             <key>PayloadDisplayName</key>
-            <string>AdGuard DNS (DoH)</string>
+            <string>AdGuard DNS (DoT)</string>
             <key>PayloadIdentifier</key>
-            <string>com.adguard.doh</string>
+            <string>com.adguard.dot</string>
             <key>PayloadType</key>
             <string>com.apple.dnsSettings</string>
             <key>PayloadUUID</key>
-            <string>B5C8E3A1-6D4F-4E2B-9C8D-1E3F5A7B9C0D</string>
+            <string>C6D7E8F9-0A1B-2C3D-4E5F-6A7B8C9D0E1F</string>
             <key>PayloadVersion</key>
             <integer>1</integer>
             <key>ProhibitDisconnect</key>
             <true/>
+            <key>VPNType</key>
+            <string>DNS</string>
+            <key>VPNServerAddress</key>
+            <string>dns.adguard-dns.com</string>
+            <key>LocalIdentifier</key>
+            <string>AdGuard-DNS</string>
         </dict>
     </array>
     <key>PayloadDisplayName</key>
-    <string>AdGuard DNS - Block Ads (DoH)</string>
+    <string>AdGuard DNS - Block Ads</string>
     <key>PayloadIdentifier</key>
-    <string>com.adguard.doh.profile</string>
+    <string>com.adguard.dns.profile</string>
     <key>PayloadRemovalDisallowed</key>
     <false/>
     <key>PayloadType</key>
@@ -46,6 +62,6 @@
     <key>PayloadVersion</key>
     <integer>1</integer>
     <key>PayloadDescription</key>
-    <string>This profile blocks ads using AdGuard DNS over HTTPS</string>
+    <string>Block ads using AdGuard DNS with DNS-over-TLS</string>
 </dict>
 </plist>
