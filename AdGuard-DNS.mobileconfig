@@ -2,48 +2,45 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+    <key>PayloadIdentifier</key>
+    <string>com.adguard.doh.2026</string>
+    <key>PayloadUUID</key>
+    <string>7C1A9E52-3F44-4A8C-9D11-2E6B5F8A1C90</string>
+    <key>PayloadDisplayName</key>
+    <string>AdGuard DNS (DoH)</string>
+    <key>PayloadDescription</key>
+    <string>Block ads using AdGuard DNS over HTTPS</string>
+    <key>PayloadRemovalDisallowed</key>
+    <false/>
+
     <key>PayloadContent</key>
     <array>
         <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.adguard.doh.settings</string>
+            <key>PayloadUUID</key>
+            <string>1F2E3D4C-5B6A-4789-8C7D-9A0B1C2D3E4F</string>
+            <key>PayloadDisplayName</key>
+            <string>AdGuard DoH Settings</string>
+
             <key>DNSSettings</key>
             <dict>
                 <key>DNSProtocol</key>
-                <string>UDP</string>
-                <key>ServerAddresses</key>
-                <array>
-                    <string>94.140.14.14</string>
-                    <string>94.140.15.15</string>
-                </array>
+                <string>HTTPS</string>
+                <key>ServerURL</key>
+                <string>https://dns.adguard-dns.com/dns-query</string>
             </dict>
-            <key>PayloadDescription</key>
-            <string>Configures DNS settings to block ads</string>
-            <key>PayloadDisplayName</key>
-            <string>AdGuard DNS</string>
-            <key>PayloadIdentifier</string>
-            <string>com.adguard.dns</string>
-            <key>PayloadType</key>
-            <string>com.apple.dnsSettings</string>
-            <key>PayloadUUID</key>
-            <string>B5C8E3A1-6D4F-4E2B-9C8D-1E3F5A7B9C0D</string>
-            <key>PayloadVersion</key>
-            <integer>1</integer>
-            <key>ProhibitDisconnect</key>
-            <true/>
         </dict>
     </array>
-    <key>PayloadDisplayName</key>
-    <string>AdGuard DNS - Block Ads</string>
-    <key>PayloadIdentifier</key>
-    <string>com.adguard.dns.profile</string>
-    <key>PayloadRemovalDisallowed</key>
-    <false/>
-    <key>PayloadType</key>
-    <string>Configuration</string>
-    <key>PayloadUUID</key>
-    <string>A1B2C3D4-E5F6-7890-ABCD-EF1234567890</string>
-    <key>PayloadVersion</key>
-    <integer>1</integer>
-    <key>PayloadDescription</key>
-    <string>This profile blocks ads using AdGuard DNS</string>
+
 </dict>
 </plist>
