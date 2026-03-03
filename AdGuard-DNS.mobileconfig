@@ -2,47 +2,45 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+    <key>PayloadIdentifier</key>
+    <string>com.adguard.doh.2026</string>
+    <key>PayloadUUID</key>
+    <string>7C1A9E52-3F44-4A8C-9D11-2E6B5F8A1C90</string>
+    <key>PayloadDisplayName</key>
+    <string>AdGuard DNS (DoH)</string>
+    <key>PayloadDescription</key>
+    <string>Block ads using AdGuard DNS over HTTPS</string>
+    <key>PayloadRemovalDisallowed</key>
+    <false/>
+
     <key>PayloadContent</key>
     <array>
         <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.adguard.doh.settings</string>
+            <key>PayloadUUID</key>
+            <string>1F2E3D4C-5B6A-4789-8C7D-9A0B1C2D3E4F</string>
+            <key>PayloadDisplayName</key>
+            <string>AdGuard DoH Settings</string>
+
             <key>DNSSettings</key>
             <dict>
                 <key>DNSProtocol</key>
-                <string>TLS</string>
-                <key>ServerName</key>
-                <string>dns.adguard-dns.com</string>
-                <key>ServerAddresses</key>
-                <array>
-                    <string>94.140.14.14</string>
-                    <string>94.140.15.15</string>
-                </array>
+                <string>HTTPS</string>
+                <key>ServerURL</key>
+                <string>https://dns.adguard-dns.com/dns-query</string>
             </dict>
-            <key>PayloadDescription</key>
-            <string>AdGuard DNS with DNS-over-TLS</string>
-            <key>PayloadDisplayName</key>
-            <string>AdGuard DNS (DoT)</string>
-            <key>PayloadIdentifier</key>
-            <string>com.adguard.dot.profile</string>
-            <key>PayloadType</key>
-            <string>com.apple.dnsSettings</string>
-            <key>PayloadUUID</key>
-            <string>11111111-2222-3333-4444-555555555555</string>
-            <key>PayloadVersion</key>
-            <integer>1</integer>
         </dict>
     </array>
 
-    <key>PayloadDisplayName</key>
-    <string>AdGuard DNS - Block Ads</string>
-    <key>PayloadIdentifier</key>
-    <string>com.adguard.dns</string>
-    <key>PayloadRemovalDisallowed</key>
-    <false/>
-    <key>PayloadType</key>
-    <string>Configuration</string>
-    <key>PayloadUUID</key>
-    <string>66666666-7777-8888-9999-AAAAAAAAAAAA</string>
-    <key>PayloadVersion</key>
-    <integer>1</integer>
 </dict>
 </plist>
